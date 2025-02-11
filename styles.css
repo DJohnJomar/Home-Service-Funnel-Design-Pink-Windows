@@ -5,49 +5,113 @@
     font-style: normal;
 }
 
+
 .sr-only {
-    position: absolute;    /* Take the element out of the flow */
-    width: 1px;            /* Make the element effectively tiny */
-    height: 1px;           /* Ensure it doesn’t take up space */
+    position: absolute;
+    /* Take the element out of the flow */
+    width: 1px;
+    /* Make the element effectively tiny */
+    height: 1px;
+    /* Ensure it doesn’t take up space */
     padding: 0;
     margin: -1px;
-    overflow: hidden;      /* Prevent the content from being visible */
-    clip: rect(0, 0, 0, 0);/* Completely clip the element from view */
-    white-space: nowrap;   /* Prevent the text from wrapping */
+    overflow: hidden;
+    /* Prevent the content from being visible */
+    clip: rect(0, 0, 0, 0);
+    /* Completely clip the element from view */
+    white-space: nowrap;
+    /* Prevent the text from wrapping */
     border: 0;
 }
 
-
-.section1 {
-    background-image: url("images/clouds.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+h2{
+    font-family: 'Futura-bold';
+}
+.uppercase{
+    text-transform: uppercase;
 }
 
-.video-button{
-    background-color:red;
-    width:5rem;
-    height:2rem;
+
+
+.video-button {
+    background-color: red;
+    width: 5rem;
+    height: 2rem;
 }
 
 .play-button {
     display: inline-block;
-    border:1px solid red;
-  }
-  
-  .play-button img {
+}
+
+.play-button img {
     width: auto;
     height: auto;
-    max-width: 80%; /* Prevents it from getting too large */
-  }
+    max-width: 80%;
+    /* Prevents it from getting too large */
+}
 
-  .col img{
+.col img {
     width: auto;
     height: auto;
-    max-width: 80%; /* Prevents it from getting too large */
-  }
+    max-width: 80%;
+    /* Prevents it from getting too large */
+}
 
-  footer{
-  }
+.section1, .section2{
+    background-color: #034361;
+}
 
+.section1 {
+    background-image: url("images/clouds.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+}
+
+.section2 h2, .section2 p{
+    color: white;
+}
+.btn{
+    background-color: #F9ABAC;
+}
+
+
+/* for Mobile s (inpection mode small mobile size)devices */
+@media(min-width:320px){
+        h2{
+            font-size: 1rem;
+        }
+        p{
+            font-size:.7rem;
+        }
+   }
+   
+   /* for Mobile L (inpection mode large mobile size)devices */
+   @media(min-width:425px){
+
+   }
+   
+   /* for small(sm) devices */
+   @media(min-width:576px){
+    
+   }
+   
+   /* for medium(md) devices */
+   @media(min-width:768px){
+
+   }
+   
+   /* for large(lg) devices */
+   @media(min-width:992px){
+   
+   }
+   
+   /* for extra large(xl) devices */
+   @media(min-width:1200px){
+   
+   }
+   
+   /* for extra extra large(xxl) devices */
+   @media(min-width:1400px){
+   
+   }
