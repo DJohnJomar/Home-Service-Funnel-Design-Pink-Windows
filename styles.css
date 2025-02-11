@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Futura-bold';
+    src: url('/fonts/futura-bold/Futura\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sr-only {
+    position: absolute;    /* Take the element out of the flow */
+    width: 1px;            /* Make the element effectively tiny */
+    height: 1px;           /* Ensure it doesn’t take up space */
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;      /* Prevent the content from being visible */
+    clip: rect(0, 0, 0, 0);/* Completely clip the element from view */
+    white-space: nowrap;   /* Prevent the text from wrapping */
+    border: 0;
+}
+
+
+.section1 {
+    background-image: url("images/clouds.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-button{
+    background-color:red;
+    width:5rem;
+    height:2rem;
+}
+
+.play-button {
+    display: inline-block;
+    border:1px solid red;
+  }
+  
+  .play-button img {
+    width: auto;
+    height: auto;
+    max-width: 80%; /* Prevents it from getting too large */
+  }
+
+  .col img{
+    width: auto;
+    height: auto;
+    max-width: 80%; /* Prevents it from getting too large */
+  }
+
