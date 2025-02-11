@@ -39,25 +39,15 @@ h2{
     height: 2rem;
 }
 
-.play-button {
-    display: inline-block;
-}
 
-.play-button img {
+.col img:not(.section3 .row img){
     width: auto;
     height: auto;
     max-width: 80%;
     /* Prevents it from getting too large */
 }
 
-.col img {
-    width: auto;
-    height: auto;
-    max-width: 80%;
-    /* Prevents it from getting too large */
-}
-
-.section1, .section2{
+.section1, .section2, .section3, .section4, .section5{
     background-color: #034361;
 }
 
@@ -68,12 +58,24 @@ h2{
     background-size: 100% 70%;
 }
 
-.section2 h2, .section2 p{
+.section2 h2, .section2 p, .section4 h2, .section5 p{
     color: white;
+}
+
+.section3 {
+    background-image: url("images/cloud-pink.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section3 .row img{
+    width:40px;
 }
 .btn{
     background-color: #F9ABAC;
 }
+
 
 
 /* for Mobile s (inpection mode small mobile size)devices */
@@ -82,7 +84,7 @@ h2{
             font-size: 1rem;
         }
         p{
-            font-size:.7rem;
+            font-size:.6rem;
         }
    }
    
