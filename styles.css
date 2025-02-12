@@ -40,7 +40,7 @@ h2{
 }
 
 
-.col img:not(.section3 .row img){
+img:not(.section3 .row img){
     width: auto;
     height: auto;
     max-width: 80%;
@@ -49,14 +49,32 @@ h2{
 
 .section1, .section2, .section3, .section4, .section5{
     background-color: #034361;
+    position:relative;
 }
 
 .section1 {
-    background-image: url("images/clouds.png");
+    background-image: url("images/mobile-clouds.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100% 70%;
+    background-size: contain;
 }
+.play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/window.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    width:90%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1.5em;
+}
+.play-button img{
+    width:10px;
+    height:10px;
+}
+
 
 .section2 h2, .section2 p, .section4 h2, .section5 p{
     color: white;
@@ -70,18 +88,24 @@ h2{
 }
 
 .section3 .row img{
-    width:40px;
+    width:35px;
 }
 .btn{
     background-color: #F9ABAC;
 }
 
+.section1{
+    border:1px solid red;
+}
 
 
 /* for Mobile s (inpection mode small mobile size)devices */
 @media(min-width:320px){
         h2{
-            font-size: 1rem;
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: 0.9rem;
         }
         p{
             font-size:.6rem;
@@ -100,7 +124,13 @@ h2{
    
    /* for medium(md) devices */
    @media(min-width:768px){
-
+        .play-button{
+            width:60%;
+        }
+        .section1{
+            background-image: url(images/desktop-clouds.png);
+            background-size: 100% 99%;
+        }
    }
    
    /* for large(lg) devices */
